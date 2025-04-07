@@ -63,6 +63,7 @@ h1 {
     overflow: hidden; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    transition-duration: 2s;
 }
 
 
@@ -91,7 +92,7 @@ h1 {
 }
 
 .panel-1 {
-    
+    display: block;
     flex: 1;
     background-color: #8f5b0d; 
     padding: 20px; 
