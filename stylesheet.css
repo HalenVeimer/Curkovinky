@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    height: 200px;
+    background-image: url('https://www.shutterstock.com/image-vector/geometric-food-pattern-abstract-bakery-600nw-2335528417.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    height: calc(100vh - 200px);
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.panelin {
+    background-image: url("https://img.delicious.com.au/Qx0J6t_j/del/2015/11/spiced-cherry-and-strawberry-pie-21382-2.jpg"); /* Replace with different URLs for unique tiles */
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    border: 1px solid #ccc; 
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px; 
+    width: 90%; 
+    height: 90%; 
+    overflow: hidden; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+
+
+.panelin:hover {
+    opacity: 0.8; 
+    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.panel-3 {
+    flex: 3;
+    background-color: #8f5b0d; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px; 
+    padding: 10px;
+    
+}
+
+.panel-2 {
+    display: block;
+    flex: 2;
+    background-color: #8f5b0d; 
+}
+
+.panel-1 {
+    display: block;
+    flex: 1;
+    background-color: #8f5b0d; 
+    padding: 20px; 
+    border-radius: 10px;
+    color: white; 
+}
+
+.panel-1 h1 {
+    text-align: center; 
+    margin-bottom: 15px;
+}
+
+.roman-list {
+    list-style-type: upper-roman; 
+    padding-left: 20px; 
+    line-height: 1.8; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+}
+
